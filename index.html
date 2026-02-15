@@ -34,13 +34,12 @@
         </a>
       </div>
       <div class="hero-ca" id="caBox" onclick="copyCA()">
-        <span>CA:</span>
+        <span>CA: 8EA6H1qy6b9D7nStGNzT3i1rxEfpFF99HXqYHtr4pump</span>
         <span class="ca-copied" id="caCopied">Copied!</span>
       </div>
       <script>
         function copyCA() {
-          const ca = document.getElementById('caBox').querySelector('span').textContent.replace('CA: ', '');
-          navigator.clipboard.writeText(ca);
+          navigator.clipboard.writeText('8EA6H1qy6b9D7nStGNzT3i1rxEfpFF99HXqYHtr4pump');
           const copied = document.getElementById('caCopied');
           copied.classList.add('show');
           setTimeout(() => copied.classList.remove('show'), 1500);
