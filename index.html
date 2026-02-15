@@ -28,22 +28,22 @@
       <h1 class="hero-title">YUCHI</h1>
       <div class="hero-buttons">
         <a href="#" class="btn btn-primary">DexScreener</a>
-        <a href="#" class="btn btn-secondary">Buy Now</a>
+        <a href="https://pump.fun/coin/8EA6H1qy6b9D7nStGNzT3i1rxEfpFF99HXqYHtr4pump" target="_blank" class="btn btn-secondary">Buy Now</a>
         <a href="https://x.com/Yuchidotfun" target="_blank" class="btn btn-x" aria-label="X / Twitter">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         </a>
       </div>
-      <div class="hero-ca" id="caBox" onclick="copyCA()">
-        <span>CA: 8EA6H1qy6b9D7nStGNzT3i1rxEfpFF99HXqYHtr4pump</span>
-        <span class="ca-copied" id="caCopied">Copied!</span>
+      <div class="hero-ca" id="caBox">
+        <span id="caText">CA: 8EA6H1qy6b9D7nStGNzT3i1rxEfpFF99HXqYHtr4pump</span>
       </div>
       <script>
-        function copyCA() {
+        document.getElementById('caBox').addEventListener('click', function() {
           navigator.clipboard.writeText('8EA6H1qy6b9D7nStGNzT3i1rxEfpFF99HXqYHtr4pump');
-          const copied = document.getElementById('caCopied');
-          copied.classList.add('show');
-          setTimeout(() => copied.classList.remove('show'), 1500);
-        }
+          var text = document.getElementById('caText');
+          var original = text.textContent;
+          text.textContent = 'Copied!';
+          setTimeout(function() { text.textContent = original; }, 1500);
+        });
       </script>
     </div>
   </section>

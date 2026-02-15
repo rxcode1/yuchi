@@ -167,10 +167,10 @@ body {
   font-family: 'Nunito', sans-serif;
   font-weight: 800;
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.85);
+  color: #ffffff;
   letter-spacing: 0.5px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 10px 24px;
   border-radius: 10px;
   cursor: pointer;
@@ -178,30 +178,10 @@ body {
   animation: fadeIn 1s ease forwards;
   animation-delay: 0.55s;
   opacity: 0;
-  position: relative;
-  user-select: all;
 }
 .hero-ca:hover {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: rgba(255, 255, 255, 0.3);
-}
-.ca-copied {
-  position: absolute;
-  top: -32px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--orange);
-  color: white;
-  font-size: 12px;
-  font-weight: 800;
-  padding: 4px 14px;
-  border-radius: 6px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s;
-}
-.ca-copied.show {
-  opacity: 1;
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 /* ========== FOOTER ========== */
